@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Admin login
+---
+
+<!-- Use base layout so nav back to public site is easy -->
+
+<div class="card">
+  <p class="kicker">Admin</p>
+  <h1 class="h1">Login</h1>
+  <p class="small">Email + password via Supabase Auth.</p>
+
+  <form data-login>
+    <div class="grid" style="gap:.75rem; max-width: 32rem;">
+      <label>
+        <div class="small">Email</div>
+        <input id="email" name="email" type="email" required style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;" />
+      </label>
+      <label>
+        <div class="small">Password</div>
+        <input id="password" name="password" type="password" required style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;" />
+      </label>
+      <div>
+        <button class="button" type="submit">Sign in</button>
+      </div>
+    </div>
+  </form>
+
+  <p class="small" data-status style="margin-top:1rem;"></p>
+</div>
+
+<script type="module">
+  // Mark this as the login page for the admin auth script
+  document.documentElement.setAttribute('data-admin-page','login');
+</script>
+<script type="module" src="/assets/js/adminAuth.js"></script>

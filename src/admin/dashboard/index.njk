@@ -1,0 +1,24 @@
+---
+layout: admin.njk
+title: Dashboard
+adminPage: "admin:dashboard"
+---
+
+<p class="kicker">Admin</p>
+<h1 class="h1">Dashboard</h1>
+<p class="lede">Private editing routes. Content will be backed by Supabase tables.</p>
+
+<div class="grid grid-2">
+  <section class="card">
+    <h2 class="h2">Projects</h2>
+    <p class="small">Create/edit project entries (public/private visibility).</p>
+    <a class="button" href="/admin/projects/">Manage projects</a>
+  </section>
+  <section class="card">
+    <h2 class="h2">Practice log</h2>
+    <p class="small">Structured, date-based evidence log (not reflective journalling).</p>
+    <a class="button" href="/admin/practice-log/">View log</a>
+  </section>
+</div>
+
+<p class="small" data-status style="margin-top:1rem;"></p>

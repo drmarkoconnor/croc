@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <div>
+          <a class="brand" href="/">{{ site.author }}</a>
+          <div class="small">Independent Portfolio (CIF-604)</div>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          {% for item in nav %}
+            {% set current = page.url == item.href %}
+            <a href="{{ item.href }}" {% if current %}aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endfor %}
+          <a href="/admin/login/" class="small">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        {{ content | safe }}
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="small">© {{ site.author }}. Built with Eleventy. Content placeholders intentionally minimal.</div>
+      </div>
+    </footer>
+  </body>
+</html>

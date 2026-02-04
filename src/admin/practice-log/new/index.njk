@@ -1,0 +1,65 @@
+---
+layout: admin.njk
+title: New practice log entry
+adminPage: "admin:practice-log:new"
+---
+
+<p class="kicker">Admin</p>
+<h1 class="h1">New practice log entry</h1>
+<p class="small">Form skeleton (no save wiring yet).</p>
+
+<form class="card" style="max-width: 52rem;">
+  <div class="grid" style="gap:1rem;">
+    <label>
+      <div class="small">Date</div>
+      <input type="date" name="date" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;" />
+    </label>
+
+    <label>
+      <div class="small">Activity type</div>
+      <input name="activity_type" placeholder="rehearsal / writing / meeting / recording …" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;" />
+    </label>
+
+    <label>
+      <div class="small">Participants</div>
+      <input name="participants" placeholder="Names + roles" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;" />
+    </label>
+
+    <label>
+      <div class="small">Context</div>
+      <textarea name="context" rows="3" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;"></textarea>
+    </label>
+
+    <label>
+      <div class="small">Actions taken</div>
+      <textarea name="actions_taken" rows="3" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;"></textarea>
+    </label>
+
+    <label>
+      <div class="small">Outcomes</div>
+      <textarea name="outcomes" rows="3" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;"></textarea>
+    </label>
+
+    <label>
+      <div class="small">Next steps</div>
+      <textarea name="next_steps" rows="3" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;"></textarea>
+    </label>
+
+    <label>
+      <div class="small">Leadership notes</div>
+      <textarea name="leadership_notes" rows="3" style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;"></textarea>
+    </label>
+
+    <label>
+      <div class="small">Evidence links (URLs)</div>
+      <textarea name="evidence_links" rows="2" placeholder='["https://…", "https://…"]' style="width:100%; padding:.6rem; border:1px solid var(--border); border-radius:10px;"></textarea>
+    </label>
+
+    <div>
+      <button class="button" type="button" disabled>Save (wiring next)</button>
+      <a class="button" href="/admin/practice-log/" style="margin-left:.5rem;">Back</a>
+    </div>
+
+    <p class="small">Note: saving requires Supabase table + RLS + write policies. This scaffold avoids shipping insecure defaults.</p>
+  </div>
+</form>

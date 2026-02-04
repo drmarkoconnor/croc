@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Eleventy output
+_dist/
+
+# Env
+.env
+.env.*
+
+# macOS
+.DS_Store
