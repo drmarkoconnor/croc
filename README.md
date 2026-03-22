@@ -1,7 +1,8 @@
 # Charlotte – Independent Portfolio (11ty + Supabase)
 
-This repo scaffolds the **infrastructure and structure** for Charlotte’s CIF-604 Independent Portfolio.
-It intentionally avoids inventing Charlotte’s artistic voice — content is placeholders.
+This repo scaffolds the **infrastructure and structure** for Charlotte’s CIF-604
+Independent Portfolio. It intentionally avoids inventing Charlotte’s artistic
+voice — content is placeholders.
 
 ## Tech
 
@@ -77,13 +78,15 @@ git push -u origin main
 
 ## Supabase
 
-- The admin area is currently a **UI skeleton** and uses client-side Supabase auth.
+- The admin area is currently a **UI skeleton** and uses client-side Supabase
+  auth.
 - SQL to create tables is in `supabase/schema.sql`.
 
 ### Important note on security
 
-Client-side Supabase requires strict **Row Level Security (RLS)** policies.
-This scaffold includes a schema starter, but you should review and tighten policies before putting real data in production.
+Client-side Supabase requires strict **Row Level Security (RLS)** policies. This
+scaffold includes a schema starter, but you should review and tighten policies
+before putting real data in production.
 
 ## Content placeholders
 
@@ -94,3 +97,4 @@ Anywhere you see:
 ```
 
 …that’s a deliberate placeholder.
+

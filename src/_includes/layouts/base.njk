@@ -19,7 +19,6 @@
             {% set current = page.url == item.href %}
             <a href="{{ item.href }}" {% if current %}aria-current="page"{% endif %}>{{ item.label }}</a>
           {% endfor %}
-          <a href="/admin/login/" class="small">Admin</a>
         </nav>
       </div>
     </header>
