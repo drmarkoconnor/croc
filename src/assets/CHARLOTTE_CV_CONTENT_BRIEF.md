@@ -130,10 +130,10 @@ Optional placeholder links:
 Use the following summary as the starting copy for the site.  
 The AI agent may lightly edit for flow, but must preserve the substance.
 
-> Charlotte O’Connor is an emerging contemporary songwriter, performer and creative
-> artist currently completing her degree at the Academy of Contemporary Music in
-> Clapham. Her work is rooted in narrative songwriting, emotional honesty and a
-> strong sense of family, identity and lived experience.
+> Charlotte O’Connor is an emerging contemporary songwriter, performer and
+> creative artist currently completing her degree at the Academy of Contemporary
+> Music in Clapham. Her work is rooted in narrative songwriting, emotional
+> honesty and a strong sense of family, identity and lived experience.
 >
 > She has performed original material in both the UK and Italy, released her
 > first album on Spotify in 2025, and is currently developing her latest
