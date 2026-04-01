@@ -7,12 +7,11 @@
     <meta name="description" content="{{ description or site.description }}" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
-  <body>
+  <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
     <header class="header">
       <div class="header-inner">
         <div>
           <a class="brand" href="/">{{ site.author }}</a>
-          <div class="small">Independent Portfolio (CIF-604)</div>
         </div>
         <nav class="nav" aria-label="Primary">
           {% for item in nav %}
@@ -31,7 +30,20 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="small">© {{ site.author }}. Built with Eleventy. Content placeholders intentionally minimal.</div>
+        <div class="small">
+          © {{ site.author }}.
+          <span class="footer-links">
+            <a href="https://open.spotify.com/album/7BuPIlz3BY5ft8gAXZtCTS?si=p7xVvVbqQ9SRMw0Exb_sYw">Spotify</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.instagram.com/charlotteoconnor_music/">Instagram</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.tiktok.com/@charlotteoconnor_music">TikTok</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:info@charlotteoconnor.music">Enquiries</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:me@charlotteoconnor.music">Personal</a>
+          </span>
+        </div>
       </div>
     </footer>
   </body>

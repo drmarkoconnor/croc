@@ -113,7 +113,8 @@ Choose one of the following or use a close variation:
 
 Use dummy details for now:
 
-- **Email:** hello@charlotteoconnor.com
+- **Professional enquiries:** info@charlotteoconnor.music
+- **Personal email:** me@charlotteoconnor.music
 - **Phone:** +44 (0)7700 900123
 - **Locations:** Bristol / London (Clapham)
 
@@ -121,6 +122,7 @@ Optional placeholder links:
 
 - Spotify
 - Instagram
+- TikTok (@charlotteoconnor_music)
 - Portfolio work page
 
 ---
@@ -161,7 +163,8 @@ Present these as clean bullets, a two-column grid, or compact info cards.
 - **Genres / Approach:** Contemporary narrative songwriting, artist-led original
   music
 - **Active Since:** placeholder if needed
-- **Contact:** hello@charlotteoconnor.com | +44 (0)7700 900123
+- **Contact (pro):** info@charlotteoconnor.music | +44 (0)7700 900123
+- **Contact (personal):** me@charlotteoconnor.music
 
 ---
 
@@ -477,18 +480,19 @@ template.
 
 Use this version if a tighter one-page web CV is needed.
 
-### Charlotte Croc
+### Charlotte O’Connor
 
 **Contemporary Songwriter & Recording Artist**
 
 Bristol / London (Clapham)  
-hello@croc.band  
+info@charlotteoconnor.music  
+me@charlotteoconnor.music  
 +44 (0)7700 900123
 
-Charlotte Croc is an emerging contemporary songwriter, performer and creative
-artist currently completing her degree at the Academy of Contemporary Music in
-Clapham. Her work centres on narrative songwriting, emotional honesty, and
-themes of family, identity and lived experience. She has performed original
+Charlotte O’Connor is an emerging contemporary songwriter, performer and
+creative artist currently completing her degree at the Academy of Contemporary
+Music in Clapham. Her work centres on narrative songwriting, emotional honesty,
+and themes of family, identity and lived experience. She has performed original
 material in the UK and Italy, released her first album on Spotify in 2025, and
 is currently developing her latest album, _Family Business_, a project shaped by
 life within a large extended family spread across the world.
@@ -545,12 +549,13 @@ Suggested optional data model:
 
 ```json
 {
-	"name": "Charlotte Croc",
+	"name": "Charlotte O’Connor",
 	"strapline": "Contemporary Songwriter & Recording Artist",
-	"email": "hello@croc.band",
+	"professional_email": "info@charlotteoconnor.music",
+	"personal_email": "me@charlotteoconnor.music",
 	"phone": "+44 (0)7700 900123",
 	"locations": ["Bristol", "London (Clapham)"],
-	"summary": "Charlotte Croc is an emerging contemporary songwriter, performer and creative artist currently completing her degree at the Academy of Contemporary Music in Clapham...",
+	"summary": "Charlotte O’Connor is an emerging contemporary songwriter, performer and creative artist currently completing her degree at the Academy of Contemporary Music in Clapham...",
 	"experience": [],
 	"education": [],
 	"skills": []

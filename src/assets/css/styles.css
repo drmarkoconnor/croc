@@ -11,6 +11,416 @@
 	--inverse: #e8d3ef;
 	--max: 68rem;
 }
+
+.footer-links {
+	margin-left: 0.35rem;
+	white-space: nowrap;
+}
+.footer-links a {
+	color: inherit;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+.footer-links a:hover {
+	color: var(--text);
+}
+
+/* Work page: two-up album hero grid */
+.album-hero-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+	margin: 1.25rem 0 1.25rem 0;
+}
+
+.album-hero {
+	margin: 0;
+}
+
+.album-hero-image {
+	display: block;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	background: rgba(255, 255, 255, 0.02);
+	transform: translateZ(0);
+}
+
+.album-hero-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+.album-hero-image:hover,
+.album-hero-image:focus-visible {
+	outline: none;
+	border-color: rgba(255, 255, 255, 0.28);
+	box-shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
+}
+
+.album-hero-caption {
+	margin-top: .65rem;
+	font-size: 1.05rem;
+}
+
+.album-hero-caption a {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.album-hero-caption a:hover {
+	border-bottom-color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 760px) {
+	.album-hero-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/*
+	Palette variants
+	- "amethyst" variant is for Home + The Insomnia Club (darker / richer)
+	- "family" variant is for Family Business (deep ink / blue)
+*/
+.page-variant-amethyst {
+	/* full palette (darker) */
+	--dark-amethyst: #310055ff;
+	--indigo-ink: #3c0663ff;
+	--indigo: #4a0a77ff;
+	--indigo-2: #5a108fff;
+	--indigo-bloom: #6818a5ff;
+	--dark-violet: #8b2fc9ff;
+	--lavender-purple: #ab51e3ff;
+	--bright-lavender: #bd68eeff;
+	--mauve-magic: #d283ffff;
+	--mauve: #dc97ffff;
+
+	/* light background + darker text (using amethyst family) */
+	--bg: #f3e8ff;
+	--surface: rgba(255, 255, 255, 0.72);
+	--surface-strong: rgba(220, 151, 255, 0.38);
+	--text: #1b0b2f; /* deep plum for legibility */
+	--text-soft: rgba(27, 11, 47, 0.88);
+	--muted: rgba(27, 11, 47, 0.68);
+	--border: rgba(60, 6, 99, 0.18);
+	--accent: var(--indigo-ink);
+	--accent-strong: var(--indigo);
+	--inverse: #ffffff;
+}
+.page-variant-amethyst body {
+	color: var(--text);
+}
+.page-variant-amethyst a,
+.page-variant-amethyst .brand,
+.page-variant-amethyst .nav a {
+	color: var(--accent);
+}
+.page-variant-amethyst a:hover {
+	opacity: 0.9;
+}
+.page-variant-amethyst .header {
+	background: linear-gradient(
+		180deg,
+		rgba(243, 232, 255, 0.92),
+		rgba(220, 151, 255, 0.46)
+	);
+}
+.page-variant-amethyst .main {
+	background:
+		radial-gradient(
+			1100px 700px at 12% 10%,
+			rgba(189, 104, 238, 0.42),
+			transparent 62%
+		),
+		radial-gradient(
+			900px 650px at 86% 18%,
+			rgba(220, 151, 255, 0.55),
+			transparent 60%
+		),
+		radial-gradient(
+			900px 680px at 46% 92%,
+			rgba(104, 24, 165, 0.16),
+			transparent 58%
+		),
+		linear-gradient(
+			135deg,
+			rgba(243, 232, 255, 0.96),
+			rgba(220, 151, 255, 0.36)
+		);
+}
+.page-variant-amethyst .footer {
+	background: rgba(220, 151, 255, 0.16);
+}
+.page-variant-amethyst .card {
+	background: linear-gradient(
+		160deg,
+		rgba(255, 255, 255, 0.78),
+		rgba(220, 151, 255, 0.26)
+	);
+	border-color: rgba(60, 6, 99, 0.16);
+	box-shadow: 0 16px 40px rgba(60, 6, 99, 0.12);
+}
+.page-variant-amethyst .h1,
+.page-variant-amethyst .h2,
+.page-variant-amethyst .track-title,
+.page-variant-amethyst .track-subtitle {
+	color: var(--text);
+}
+.page-variant-amethyst .small,
+.page-variant-amethyst .lede,
+.page-variant-amethyst .track-meta,
+.page-variant-amethyst .track-number {
+	color: var(--muted);
+}
+.page-variant-amethyst .track-item,
+.page-variant-amethyst .track-feature {
+	background: rgba(0, 0, 0, 0.14);
+	border-color: rgba(189, 104, 238, 0.26);
+}
+.page-variant-amethyst .pill {
+	background: linear-gradient(
+		160deg,
+		rgba(90, 16, 143, 0.14),
+		rgba(220, 151, 255, 0.26)
+	);
+	color: var(--text);
+}
+.page-variant-amethyst .note {
+	color: var(--text-soft);
+	border-left-color: rgba(220, 151, 255, 0.7);
+}
+.page-variant-amethyst .button {
+	background: linear-gradient(160deg, var(--indigo-ink), var(--indigo-bloom));
+	color: #ffffff;
+	box-shadow: 0 14px 30px rgba(60, 6, 99, 0.22);
+}
+.page-variant-amethyst .button:hover {
+	background: linear-gradient(160deg, var(--indigo-bloom), var(--dark-violet));
+}
+.page-variant-amethyst .media-embed {
+	background: linear-gradient(
+		180deg,
+		rgba(189, 104, 238, 0.22),
+		rgba(220, 151, 255, 0.16)
+	);
+}
+
+.page-variant-family {
+	/* full palette (ink / blue) */
+	--ink-black: #00111cff;
+	--ink-black-2: #001523ff;
+	--ink-black-3: #001a2cff;
+	--deep-space-blue: #002137ff;
+	--deep-space-blue-2: #00253eff;
+	--deep-space-blue-3: #002945ff;
+	--deep-space-blue-4: #002e4eff;
+	--deep-space-blue-5: #003356ff;
+	--yale-blue: #003a61ff;
+	--yale-blue-2: #00406cff;
+
+	/* strict palette observance: ONLY use the provided palette values */
+	--bg: var(--ink-black);
+	--surface: var(--deep-space-blue-2);
+	--surface-strong: var(--deep-space-blue-5);
+	--text: #eaf6ff;
+	--text-soft: rgba(234, 246, 255, 0.92);
+	--muted: rgba(234, 246, 255, 0.72);
+	--border: var(--yale-blue-2);
+	--accent: var(--yale-blue);
+	--accent-strong: var(--yale-blue-2);
+	--inverse: var(--ink-black);
+}
+.page-variant-family body {
+	color: var(--text);
+}
+.page-variant-family a,
+.page-variant-family .brand,
+.page-variant-family .nav a {
+	color: var(--text);
+}
+.page-variant-family .nav a[aria-current='page'] {
+	color: var(--text);
+	text-decoration: underline;
+}
+.page-variant-family .header {
+	background: linear-gradient(
+		135deg,
+		var(--deep-space-blue-2),
+		var(--yale-blue)
+	);
+}
+.page-variant-family .main {
+	background:
+		radial-gradient(
+			1100px 720px at 70% 8%,
+			var(--yale-blue-2),
+			transparent 60%
+		),
+		radial-gradient(1000px 720px at 12% 22%, var(--yale-blue), transparent 58%),
+		radial-gradient(
+			900px 780px at 42% 92%,
+			var(--deep-space-blue-4),
+			transparent 56%
+		),
+		radial-gradient(
+			820px 620px at 88% 78%,
+			var(--deep-space-blue-5),
+			transparent 56%
+		),
+		linear-gradient(135deg, var(--ink-black-2), var(--deep-space-blue-2));
+	position: relative;
+}
+.page-variant-family .main::before {
+	/* Subtle CSS-only grain (no images) */
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background:
+		repeating-linear-gradient(
+			0deg,
+			rgba(0, 21, 35, 0.04) 0,
+			rgba(0, 21, 35, 0.04) 1px,
+			transparent 1px,
+			transparent 3px
+		),
+		repeating-linear-gradient(
+			90deg,
+			rgba(0, 21, 35, 0.025) 0,
+			rgba(0, 21, 35, 0.025) 1px,
+			transparent 1px,
+			transparent 4px
+		);
+	opacity: 0.22;
+	mix-blend-mode: multiply;
+}
+.page-variant-family .main {
+	isolation: isolate;
+}
+.page-variant-family .container,
+.page-variant-family .header,
+.page-variant-family .footer {
+	position: relative;
+	z-index: 1;
+}
+.page-variant-family .footer {
+	background: rgba(0, 0, 0, 0.18);
+}
+.page-variant-family .card {
+	background: linear-gradient(
+		160deg,
+		var(--deep-space-blue-2),
+		var(--deep-space-blue-4)
+	);
+	border-color: rgba(0, 64, 108, 0.55);
+	box-shadow: 0 16px 44px rgba(0, 0, 0, 0.36);
+}
+.page-variant-family .h1,
+.page-variant-family .h2,
+.page-variant-family .track-title,
+.page-variant-family .track-subtitle {
+	color: var(--text);
+}
+.page-variant-family .small,
+.page-variant-family .lede,
+.page-variant-family .track-meta,
+.page-variant-family .track-number {
+	color: var(--muted);
+}
+.page-variant-family .track-item,
+.page-variant-family .track-feature {
+	background: rgba(0, 0, 0, 0.12);
+	border-color: rgba(0, 64, 108, 0.45);
+}
+.page-variant-family .pill {
+	background: linear-gradient(
+		160deg,
+		rgba(0, 64, 108, 0.14),
+		rgba(231, 243, 255, 0.45)
+	);
+	color: var(--text);
+}
+.page-variant-family .note {
+	color: var(--text-soft);
+	border-left-color: rgba(234, 246, 255, 0.55);
+}
+.page-variant-family .button {
+	background: linear-gradient(
+		160deg,
+		var(--deep-space-blue-5),
+		var(--yale-blue-2)
+	);
+	color: #ffffff;
+	box-shadow: 0 14px 30px rgba(0, 33, 55, 0.18);
+}
+.page-variant-family .button:hover {
+	background: linear-gradient(160deg, var(--yale-blue), var(--yale-blue-2));
+}
+.page-variant-family .track-photo {
+	border-color: rgba(0, 64, 108, 0.45);
+}
+.page-variant-family .track-photo img {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 21, 35, 0.55),
+		rgba(0, 33, 55, 0.24)
+	);
+}
+.page-variant-family .track-highlight-box,
+.page-variant-family .media-link {
+	background: linear-gradient(
+		160deg,
+		rgba(0, 64, 108, 0.12),
+		rgba(255, 255, 255, 0.62)
+	);
+	border-color: rgba(0, 64, 108, 0.22);
+	box-shadow: 0 16px 36px rgba(0, 33, 55, 0.12);
+}
+
+.track-grid {
+	display: grid;
+	gap: 1rem;
+}
+@media (min-width: 52rem) {
+	.track-grid {
+		grid-template-columns: 1fr;
+	}
+}
+.track-card {
+	display: grid;
+	gap: 1rem;
+	align-items: start;
+	padding: 1rem;
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	background: rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 52rem) {
+	.track-card {
+		grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.6fr);
+	}
+}
+.track-card a {
+	color: inherit;
+}
+.track-card-image {
+	display: block;
+	border-radius: 14px;
+	overflow: hidden;
+	border: 1px solid var(--border);
+	background: rgba(0, 0, 0, 0.12);
+}
+.track-card-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
 * {
 	box-sizing: border-box;
 }
