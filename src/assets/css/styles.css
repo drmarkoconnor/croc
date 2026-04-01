@@ -601,9 +601,40 @@ a:hover {
 	color: var(--inverse);
 	background: var(--accent);
 	box-shadow: 0 10px 24px rgba(57, 29, 88, 0.22);
+	transition:
+		transform 140ms ease,
+		filter 140ms ease,
+		box-shadow 140ms ease,
+		background-color 140ms ease,
+		border-color 140ms ease,
+		color 140ms ease;
 }
-.button:hover {
+.button:hover,
+.button:focus-visible {
 	background: var(--accent-strong);
+	filter: brightness(1.03);
+	transform: translateY(-1px);
+	box-shadow: 0 14px 34px rgba(57, 29, 88, 0.3);
+}
+
+.button:focus-visible {
+	outline: 3px solid rgba(57, 29, 88, 0.22);
+	outline-offset: 2px;
+}
+
+/* Button variant: ghost (used on hero overlays) */
+.button.button--ghost {
+	background: rgba(255, 255, 255, 0.14);
+	border-color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.button.button--ghost:hover,
+.button.button--ghost:focus-visible {
+	background: rgba(255, 255, 255, 0.26);
+	border-color: rgba(255, 255, 255, 0.55);
+	filter: none;
 }
 .note {
 	border-left: 3px solid var(--accent);
