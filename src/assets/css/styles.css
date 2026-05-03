@@ -986,6 +986,21 @@ select {
 	margin-bottom: 0.35rem;
 	color: var(--accent-strong);
 }
+.evidence-category-grid {
+	display: grid;
+	gap: 0.85rem;
+}
+.evidence-category-grid .track-highlight-box p {
+	margin: 0;
+}
+@media (min-width: 54rem) {
+	.evidence-category-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.evidence-category-grid .track-highlight-box:last-child {
+		grid-column: 1 / -1;
+	}
+}
 .milestone-list {
 	display: grid;
 	gap: 1rem;
@@ -1152,6 +1167,22 @@ select {
 	font-size: 0.75rem;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
+}
+.studio-audio-card {
+	display: grid;
+	gap: 0.75rem;
+	padding: 1rem;
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.1);
+}
+.studio-audio-card p {
+	margin: 0;
+}
+.studio-audio-card audio {
+	display: block;
+	width: 100%;
+	max-width: 100%;
 }
 .live-video-grid {
 	display: grid;
