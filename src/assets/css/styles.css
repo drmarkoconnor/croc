@@ -986,6 +986,49 @@ select {
 	margin-bottom: 0.35rem;
 	color: var(--accent-strong);
 }
+.milestone-list {
+	display: grid;
+	gap: 1rem;
+}
+.milestone-card {
+	display: grid;
+	gap: 0.85rem;
+}
+.milestone-card .h2 {
+	margin-bottom: 0;
+}
+.milestone-card p:last-child {
+	margin-bottom: 0;
+}
+.milestone-meta {
+	display: grid;
+	gap: 0.65rem;
+	margin: 0;
+}
+.milestone-meta div {
+	display: grid;
+	gap: 0.2rem;
+	padding: 0.75rem 0.85rem;
+	border: 1px solid rgba(169, 151, 172, 0.55);
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.42);
+}
+.milestone-meta dt {
+	color: var(--muted);
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+.milestone-meta dd {
+	margin: 0;
+	color: var(--text-soft);
+}
+@media (min-width: 52rem) {
+	.milestone-meta {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
 .track-detail-group {
 	display: grid;
 	gap: 0.35rem;

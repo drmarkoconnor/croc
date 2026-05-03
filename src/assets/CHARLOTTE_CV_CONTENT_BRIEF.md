@@ -113,8 +113,7 @@ Choose one of the following or use a close variation:
 
 Use dummy details for now:
 
-- **Professional enquiries:** charlotteoconnormusic@gmail.com
-- **Personal email:** charlotteoconnormusic@gmail.com
+- **Email:** charlotteoconnormusic@gmail.com
 - **Phone:** +44 (0)7700 900123
 - **Locations:** Bristol / London (Clapham)
 
@@ -163,8 +162,8 @@ Present these as clean bullets, a two-column grid, or compact info cards.
 - **Genres / Approach:** Contemporary narrative songwriting, artist-led original
   music
 - **Active Since:** placeholder if needed
-- **Contact (pro):** charlotteoconnormusic@gmail.com | +44 (0)7700 900123
-- **Contact (personal):** charlotteoconnormusic@gmail.com
+- **Email:** charlotteoconnormusic@gmail.com
+- **Phone:** +44 (0)7700 900123
 
 ---
 
@@ -489,7 +488,6 @@ Use this version if a tighter one-page web CV is needed.
 
 Bristol / London (Clapham)<br>
 charlotteoconnormusic@gmail.com<br>
-charlotteoconnormusic@gmail.com<br>
 +44 (0)7700 900123
 
 Charlotte O’Connor is an emerging contemporary songwriter, performer and
@@ -555,8 +553,7 @@ Suggested optional data model:
 {
 	"name": "Charlotte O’Connor",
 	"strapline": "Contemporary Songwriter & Recording Artist",
-	"professional_email": "charlotteoconnormusic@gmail.com",
-	"personal_email": "charlotteoconnormusic@gmail.com",
+	"email": "charlotteoconnormusic@gmail.com",
 	"phone": "+44 (0)7700 900123",
 	"locations": ["Bristol", "London (Clapham)"],
 	"summary": "Charlotte O’Connor is an emerging contemporary songwriter, performer and creative artist currently completing her degree at the Academy of Contemporary Music in Clapham...",
