@@ -192,8 +192,10 @@ _Selected recent years_
 Suggested body copy:
 
 > Performed original songs in live settings in both the United Kingdom and
-> Italy, developing confidence in audience engagement, presentation of original
-> work and adaptation of material for varied performance contexts.
+> Italy, including an invited performance of _Tidal Wave_ at a restaurant
+> opening in Lucciana Nardi, Tuscany. This helped develop confidence in audience
+> engagement, presentation of original work and adaptation of material for
+> varied performance contexts.
 
 ### Entry 3
 
@@ -228,7 +230,8 @@ It can be built as a neat list or mini-discography.
 #### Selected Performances
 
 - Original material performed in the UK
-- Original material performed in Italy
+- Original material performed in Italy, including an invited performance of
+  _Tidal Wave_ in Lucciana Nardi, Tuscany
 
 #### Releases
 
@@ -504,7 +507,8 @@ and strong people skills that continue to inform her creative practice.
 #### Selected Experience
 
 - Independent songwriter and recording artist
-- Performed original material in the UK and Italy
+- Performed original material in the UK and Italy, including an invited
+  performance of _Tidal Wave_ in Lucciana Nardi, Tuscany
 - Released debut album on Spotify in 2025
 - Currently developing the themed album _Family Business_
 
