@@ -113,8 +113,8 @@ Choose one of the following or use a close variation:
 
 Use dummy details for now:
 
-- **Professional enquiries:** info@charlotteoconnor.music
-- **Personal email:** me@charlotteoconnor.music
+- **Professional enquiries:** charlotteoconnormusic@gmail.com
+- **Personal email:** charlotteoconnormusic@gmail.com
 - **Phone:** +44 (0)7700 900123
 - **Locations:** Bristol / London (Clapham)
 
@@ -163,8 +163,8 @@ Present these as clean bullets, a two-column grid, or compact info cards.
 - **Genres / Approach:** Contemporary narrative songwriting, artist-led original
   music
 - **Active Since:** placeholder if needed
-- **Contact (pro):** info@charlotteoconnor.music | +44 (0)7700 900123
-- **Contact (personal):** me@charlotteoconnor.music
+- **Contact (pro):** charlotteoconnormusic@gmail.com | +44 (0)7700 900123
+- **Contact (personal):** charlotteoconnormusic@gmail.com
 
 ---
 
@@ -484,9 +484,9 @@ Use this version if a tighter one-page web CV is needed.
 
 **Contemporary Songwriter & Recording Artist**
 
-Bristol / London (Clapham)  
-info@charlotteoconnor.music  
-me@charlotteoconnor.music  
+Bristol / London (Clapham)<br>
+charlotteoconnormusic@gmail.com<br>
+charlotteoconnormusic@gmail.com<br>
 +44 (0)7700 900123
 
 Charlotte O’Connor is an emerging contemporary songwriter, performer and
@@ -551,8 +551,8 @@ Suggested optional data model:
 {
 	"name": "Charlotte O’Connor",
 	"strapline": "Contemporary Songwriter & Recording Artist",
-	"professional_email": "info@charlotteoconnor.music",
-	"personal_email": "me@charlotteoconnor.music",
+	"professional_email": "charlotteoconnormusic@gmail.com",
+	"personal_email": "charlotteoconnormusic@gmail.com",
 	"phone": "+44 (0)7700 900123",
 	"locations": ["Bristol", "London (Clapham)"],
 	"summary": "Charlotte O’Connor is an emerging contemporary songwriter, performer and creative artist currently completing her degree at the Academy of Contemporary Music in Clapham...",
@@ -577,4 +577,3 @@ The strongest version of this CV will feel:
 - musically serious
 - emotionally intelligent
 - future-facing
-
